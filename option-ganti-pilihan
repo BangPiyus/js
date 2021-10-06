@@ -1,0 +1,29 @@
+HTML
+
+<select id="listpelanggan" onchange="opsidata">
+  <option value="dataagen">agen</option>
+  <option value="datapelanggan">pelanggan</option>
+</select>
+
+<select id="dataagen">
+</select>
+
+<select id="datapelanggan">
+</select>
+
+
+
+JS
+function opsidata(){
+    let pilihan = document.getElementById("listpelanggan");
+    let terpilih = pilihan.value;
+    if(terpilih=='datapelanggan'){
+      document.getElementById("dataagen").style.display = "none";    
+      document.getElementById("datapelanggan").style.display = "block";    
+    }else{
+      document.getElementById("dataagen").style.display = "block";   
+      document.getElementById("datapelanggan").style.display = "none";   
+    }
+}
+
+
