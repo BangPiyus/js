@@ -1,0 +1,2 @@
+const listx = $(this).data('list');
+                $("#edit_list option[value='" + listx + "']").attr("selected","selected");
